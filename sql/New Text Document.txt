@@ -1,0 +1,16 @@
+SELECT
+                                    o.receipt_no,
+                                    o.name,
+                                    sum(o.amount) as Total,
+                                    sum(case when oc.category='Tithes' then o.amount else '-' end) as T, 
+                                    sum(case when oc.category='Thanks Offerings' then o.amount else '-' end) as 'TO', 
+                                    sum(case when oc.category='Birthday Offering' then o.amount else '-' end) as BDO,
+                                    sum(case when oc.category='Dorcas Offering' then o.amount else '-' end) as DO,
+                                    sum(case when oc.category='Poor Fund Offering' then o.amount else '-' end) as 'PFO',
+                                    sum(case when oc.category='Church Expenses Offering' then o.amount else '-' end) as 'CEO',
+                                    sum(case when oc.category='Sabbath School Offering' then o.amount else '-' end) as 'SSO',
+                                    sum(case when oc.category='Investment Offering  ' then o.amount else '-' end) as 'IO',
+                                    sum(case when oc.category='Building Project' then o.amount else '-' end) as 'BPO',
+                                    sum(case when oc.category='Sabbath School Lesson Cost Payment' then o.amount else '-' end) as 'SSLCP',sum(case when oc.category='Wedding Offering' then o.amount else '-' end) as 'WO'
+                                    FROM `offerings` o left outer join offerings_category oc on  o.cat_id=oc.id  
+                                    where o.cid=".$_SESSION['cid']." group by o.name,o.receipt_no

@@ -1,0 +1,45 @@
+@media all {
+    .page-break  { display:none; }
+    .divider {
+		border: 1px solid #000000;
+	}
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2em;
+        word-spacing: 1px;
+        letter-spacing: 0.2px;
+        font: 11px Arial, Helvetica,"Lucida Grande", serif !important;
+        color: #000;
+        background-color:#FFF !important;
+    }
+    .page-break  { display:block; page-break-before:always; }
+    .noprint { display: none; }
+    .lBottom { margin: 5px 0 5px 0; }
+    .lBottom2{ margin: 0 0 5px 0; }
+    .table { border: none !important; }
+    .txtBox{ width: 99%; height: 60px; border: 1px solid #000; }
+    .divider { border: 1px solid #000000;}
+    ul.service li span:before {
+  		content: "\261B";
+  		font-size: 16px;
+  		padding: 0 5px 0 0;
+	}
+	ul.service li span:before {
+	  content: "\261B";
+		font-size: 18px;
+	}
+}
+
+@media screen {
+    .footer {
+        bottom: 20px;
+    }
+
+    body{
+        margin-bottom: 30px;
+    }
+}

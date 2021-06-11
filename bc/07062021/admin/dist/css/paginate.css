@@ -1,0 +1,59 @@
+/* pagination style */
+@font-face {
+    font-family: 'euphemiaregular';
+    src: url('../fonts/euphemia-webfont.eot');
+    src: url('../fonts/euphemia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/euphemia-webfont.woff2') format('woff2'),
+         url('../fonts/euphemia-webfont.woff') format('woff'),
+         url('../fonts/euphemia-webfont.ttf') format('truetype'),
+         url('../fonts/euphemia-webfont.svg#euphemiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section#content article#cleft .pagin {
+padding: 2px 0;
+margin: 0;
+font-family: 'euphemiaregular';
+font-size: 7pt !important;
+font-weight: bold !important;
+}
+section#content article#cleft .pagin * {
+padding: 2px 6px ;
+margin: 0;
+}
+section#content article#cleft .pagin a {
+border: solid 1px #666666 !important;
+background-color: #EFEFEF !important;
+color: #666666 !important;
+text-decoration: none;
+}
+section#content article#cleft .pagin a:visited {
+border: solid 1px #666666 !important;
+background-color: #EFEFEF !important;
+color: #60606F !important;
+text-decoration: none;
+}
+section#content article#cleft .pagin a:hover, .pagin a:active {
+border: solid 1px #CC0000 !important;
+background-color: white !important;
+color: #CC0000 !important;
+text-decoration: none !important;
+}
+section#content article#cleft .pagin span {
+cursor: default;
+border: solid 1px #808080 !important;
+background-color: #F0F0F0 !important;
+color: #B0B0B0 !important;
+}
+section#content article#cleft .pagin span.current {
+border: solid 1px #666666 !important;
+background-color: #666666 !important;
+color: white !important;
+}
+section#content article#cleft .pagin span{
+	font-size:7pt !important;
+	line-height:unset !important;
+    margin: 10px 0 !important;
+	padding: 4px 6px 3px 6px;
+}

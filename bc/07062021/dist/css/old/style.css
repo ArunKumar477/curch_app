@@ -1,0 +1,45 @@
+.error{
+	color:red;
+	font-weight:bold;
+}
+.success{
+	color:green;
+	font-weight:bold;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.fcolor{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.icons{
+	padding: 0 5px 0 0;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.theight{
+	height: 25px;
+}
+
+ul li{
+	list-style: none;
+}
+
+.lBottom { margin: 5px 0 5px 0; }
+.lBottom2{ margin: 0 0 5px 0; }
+ul.service li span:before {
+  	content: "\261B";
+  	font-size: 16px;
+  	padding: 0 5px 0 0;
+}
+ul.service li span:before {
+	content: "\261B";
+	font-size: 18px;
+}

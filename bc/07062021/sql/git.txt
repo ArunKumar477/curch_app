@@ -1,0 +1,31 @@
+create new gitlab account
+-------------------------------
+ssh-keygen -t rsa -b 2048 -C "email@example.com"
+
+cat ~/.ssh/id_rsa.pub | clip
+
+
+new project 
+---------------------
+
+git clone "git@git.vtt.im:root/att.git"
+
+readme.md --- > add to manual (OR)touch README.md
+
+cd add
+
+git add .
+
+git commit -m "example"
+
+{
+ git status --> check current status (EX : code commit BUT not push or pull)
+}
+git push -u origin master 
+
+{
+git checkout dev 
+}
+
+git pull origin master -u
+
